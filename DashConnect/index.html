@@ -8,56 +8,63 @@
   </head>
   <body>
     <h1 class="main-title">JavaScript API Dashboard</h1>
-    <div class="grid-container">
+    <main class="grid-container">
       <section class="grid-item" id="dog-api">
         <h2>🐶 Random Dog</h2>
-        <button onclick="getDogImage()">Get Dog</button>
-        <div class="output" id="dog-output"></div>
+        <button type="button" onclick="getDogImage()">Get Dog</button>
+        <div class="output" id="dog-output" aria-live="polite"></div>
+        
       </section>
 
       <section class="grid-item" id="cat-api">
         <h2>🐱 Random Cat</h2>
-        <button onclick="getCatImage()">Get Cat</button>
-        <div class="output" id="cat-output"></div>
+        <button type="button" onclick="getCatImage()">Get Cat</button>
+        <div class="output" id="cat-output" aria-live="polite"></div>
+        
       </section>
 
       <section class="grid-item" id="weather-api">
-        <h2>☀️ Weather Info</h2>
-        <button onclick="getWeather()">Get Weather</button>
-        <div class="output" id="weather-output"></div>
+        <h2>☀️ Weather — New York City</h2>
+        <button type="button" onclick="getWeather()">Get Weather</button>
+        <div class="output" id="weather-output" aria-live="polite"></div>
+        <a href="https://open-meteo.com/">Weather data by Open-Meteo</a>
       </section>
 
       <section class="grid-item" id="currency-api">
         <h2>💱 Currency Rates</h2>
-        <button onclick="getExchangeRates()">Get Rates</button>
-        <div class="output" id="currency-output"></div>
+        <button type="button" onclick="getExchangeRates()">Get Rates</button>
+        <div class="output" id="currency-output" aria-live="polite"></div>
+        <a href="https://www.exchangerate-api.com">Rates By Exchange Rate API</a>
       </section>
 
       <section class="grid-item" id="movies-api">
-        <h2>🎮 Trending Movies</h2>
-        <button onclick="getMovies()">Get Movies</button>
-        <div class="output" id="movies-output"></div>
+        <h2>📺 TV Shows</h2>
+        <button type="button" onclick="getMovies()">Get Shows</button>
+        <div class="output" id="movies-output" aria-live="polite"></div>
+        <a href="https://www.tvmaze.com/">TV data by TVmaze</a>
       </section>
 
       <section class="grid-item" id="github-api">
         <h2>🧑‍💻 GitHub User</h2>
-        <button onclick="getGitHubUser()">Get User</button>
-        <div class="output" id="github-output"></div>
+        <button type="button" onclick="getGitHubUser()">Get User</button>
+        <div class="output" id="github-output" aria-live="polite"></div>
+        
       </section>
 
       <section class="grid-item" id="joke-api">
         <h2>🤣 Random Joke</h2>
-        <button onclick="getJoke()">Get Joke</button>
-        <div class="output" id="joke-output"></div>
+        <button type="button" onclick="getJoke()">Get Joke</button>
+        <div class="output" id="joke-output" aria-live="polite"></div>
+        
       </section>
 
-      <section class="grid-item" id="public-api">
-        <h2>📚 Public APIs</h2>
-        <button onclick="getPublicApiInfo()">Show One</button>
-        <div class="output" id="publicapi-output"></div>
+      <section class="grid-item" id="publicapi-api">
+        <h2>📚 Random Cat Fact</h2>
+        <button type="button" onclick="getPublicApiInfo()">Get Fact</button>
+        <div class="output" id="publicapi-output" aria-live="polite"></div>
+        
       </section>
-    </div>
-
+    </main>
     <script src="script.js"></script>
   </body>
 </html>
